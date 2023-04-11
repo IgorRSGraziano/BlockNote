@@ -8,6 +8,7 @@ import {
   RiListOrdered,
   RiListUnordered,
   RiText,
+  RiImageLine,
 } from "react-icons/ri";
 
 const extraFields: Record<
@@ -49,6 +50,12 @@ const extraFields: Record<
     icon: <RiText size={18} />,
     hint: "Used for the body of your document",
     shortcut: formatKeyboardShortcut("Mod-Alt-0"),
+  },
+  Image: {
+    group: "Basic blocks",
+    icon: <RiImageLine size={18} />,
+    hint: "Used to display an image",
+    shortcut: formatKeyboardShortcut("Mod-Alt-i"),
   },
 };
 

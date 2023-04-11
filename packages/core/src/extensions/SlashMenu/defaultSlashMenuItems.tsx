@@ -55,6 +55,16 @@ export const defaultSlashMenuItems: BaseSlashMenuItem[] = [
     ["h3", "heading3", "subheading"]
   ),
 
+  // Command for creating a image
+  new BaseSlashMenuItem(
+    "Image",
+    (editor) =>
+      insertOrUpdateBlock(editor, {
+        type: "image",
+      }),
+    ["img", "image"]
+  ),
+
   // Command for creating an ordered list
   new BaseSlashMenuItem(
     "Numbered List",
